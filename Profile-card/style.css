@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*our content will not overflow*/
+  font-family : "Poppins", sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+/*below is styling for main class*/
+.main {
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 24px;
+  max-width: 300px;
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(88, 1, 53, 0.4);
+  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/*below is for img class*/
+.img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(216, 37, 147);
+  
+  padding :3px;
+}
+/*styling the img*/
+.img .pro-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+/*making the text data container as flex so that the text is displayed one after the other also in center*/
+.main .textdata{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+/* below is styling the text*/
+.textdata .name{
+  font-size: larger;
+  font-weight: 500;
+}
+.textdata .job{
+  font-size: small;
+  font-weight: 400;
+}
+.main .icons{
+  display:flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.icons .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;;
+  color: white;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.main .buttons{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+}
+.buttons .button{
+  background-color: rgb(15, 111, 229);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+.button:hover{
+  cursor: pointer;
+  color:rgb(15, 111, 229) ;
+  background-color: rgb(162, 239, 235);
+  transition: 1.6s;
+}
+.symbols-class{
+  display:flex;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+}
+.main::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: rgb(76, 147, 241);
+}
